@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F6"
+    android:fitsSystemWindows="true"
+    tools:context=".ViewTeams">
+
+
+    <Button
+        android:id="@+id/btnViewTeam"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_primary"
+        android:text="viewTeam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_light_purple"
+        android:text="Team Name"
+        android:textColor="@android:color/black"
+        app:backgroundTint="#FAF5F5"
+        app:layout_constraintStart_toStartOf="@+id/btnViewTeam"
+        app:layout_constraintTop_toTopOf="@+id/btnViewTeam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
