@@ -18,6 +18,18 @@ public class PlayerData {
         this.age = age;
     }
 
+    public PlayerData(String str_email, String str_contactDetails, String str_password) {
+        this.email = str_email;
+        this.contactDetails = str_contactDetails;
+        this.password = str_password;
+        this.name = "Rohan";
+        this.address = "Pune";
+        this.noOfMatches = "0";
+        this.locality = "Bavdhan";
+        this.gender = "Male";
+        this.age = "20";
+    }
+
     public String getName() {
         return name;
     }

@@ -1,6 +1,8 @@
 package com.example.temp;
 
 
+import java.util.Date;
+
 public class TeamData {
     String teamID, teamHead, playertwoName, playerthreeName, playerfourName, courtName, courtID, memberNo, date, time;
 
@@ -20,6 +22,18 @@ public class TeamData {
         this.date = date;
         this.time = time;
 
+    }
+
+    public TeamData(String teamName, String teamHead, String membersNo, String playertwo, String playerThree, String playerFour, String courtName) {
+        this.teamID = teamName;
+        this.teamHead = teamHead;
+        this.playertwoName = playertwo;
+        this.playerthreeName = playerThree;
+        this.playerfourName = playerFour;
+        this.courtName = courtName;
+        this.memberNo = membersNo;
+        this.date = "02/12/20";
+        this.time = "105700";
     }
 
     public String getDate() {

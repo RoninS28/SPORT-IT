@@ -27,7 +27,7 @@ public class teamsAdapter extends FirebaseRecyclerAdapter<TeamData, teamsAdapter
 
     @Override
     protected void onBindViewHolder(@NonNull myview view, int i, @NonNull TeamData teamData) {
-        view.teamName.setText(teamData.getTeamName());
+        view.teamName.setText(teamData.getTeamID());
         view.teamHead.setText(teamData.getTeamHead());
         view.members.setText(teamData.getMemberNo());
 
