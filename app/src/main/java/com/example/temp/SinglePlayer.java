@@ -32,7 +32,6 @@ public class SinglePlayer extends AppCompatActivity implements View.OnClickListe
     WhoKnowsFrag whoKnowsFrag = new WhoKnowsFrag();
     ActionBarDrawerToggle toggle;
     Toolbar toolbar;
-    Toast toast;
 
 
     public SinglePlayer() {

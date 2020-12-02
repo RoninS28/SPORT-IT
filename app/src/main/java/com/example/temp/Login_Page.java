@@ -46,16 +46,13 @@ public class Login_Page extends AppCompatActivity  {
                 Log.println(Log.INFO, "ENTERED USERNAME IS" + username, "USERNAME IS " + username);
                 Log.println(Log.INFO, "ENTERED PASSWORD IS" + password, "PASSWORD IS " + password);
 
-                auth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Log.println(Log.INFO, "SUCCESS" , "SUCCESS IS " );
-//                            startActivity(new Intent(getApplicationContext(), SinglePlayer.class));
-//                            finish();
-                        }
-
+                auth.signInWithEmailAndPassword(username, password).addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Log.println(Log.INFO, "SUCCESS" , "SUCCESS IS " );
+                            startActivity(new Intent(getApplicationContext(), SinglePlayer.class));
+                            finish();
                     }
+
                 });
             }
         });
