@@ -38,10 +38,14 @@ public class Create_Profile extends AppCompatActivity implements View.OnClickLis
         password = findViewById(R.id.membersNo);
 
         Button btnBegin = findViewById(R.id.btnBegin);
-        btnBegin.setOnClickListener(this);
+        btnBegin.setOnClickListener(this::onClick);
 
         Button btnLogin = findViewById(R.id.btnLogin2);
         btnLogin.setOnClickListener(this::onClick);
+    }
+    public void gotoCreateProfile(){
+        startActivity(new Intent(this, Login_Page.class));
+        this.finish();
     }
 
     public void onClick(View v) {
@@ -50,7 +54,7 @@ public class Create_Profile extends AppCompatActivity implements View.OnClickLis
             startActivity(new Intent(this, Login_Page.class));
             this.finish();
         }
-        else
+        else if(((Button) v).getText().toString().equals("Let\'s Begin"))
         {
 //            boolean flag=false;
             String str_email = email.getEditText().getText().toString();
@@ -70,6 +74,8 @@ public class Create_Profile extends AppCompatActivity implements View.OnClickLis
                             @Override
                             public void onSuccess(Void aVoid) {
                                 Log.d("SUCCESS", "USER ADDED");
+                                startActivity(new Intent(getApplicationContext(), Login_Page.class));
+                                finish();
                             }
                         });
 
