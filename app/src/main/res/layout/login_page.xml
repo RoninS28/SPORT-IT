@@ -2,9 +2,14 @@
 <android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     android:layout_width="match_parent" android:layout_height="match_parent">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent" android:layout_height="match_parent">
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+>>>>>>> a34d7f9cfa8589f63046b2e7521c82bc6042c588
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
@@ -14,7 +19,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="30dp"
-        android:hint="Username"
+        android:hint="@string/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -33,7 +38,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:hint="Password"
+        android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
@@ -52,9 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginEnd="30dp"
-        android:background="@color/black"
         android:elevation="0dp"
-        android:text="Forgot password?"
+        android:text="@string/forgot_password"
         android:textAllCaps="false"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
@@ -67,10 +71,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+<<<<<<< HEAD
         android:layout_marginTop="4dp"
         android:background="@color/black"
+=======
+        android:layout_marginTop="8dp"
+>>>>>>> a34d7f9cfa8589f63046b2e7521c82bc6042c588
         android:elevation="0dp"
-        android:text="New Player?"
+        android:text="@string/new_player"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +102,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/aladin"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,10 +114,15 @@
         android:layout_height="68dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="60dp"
+<<<<<<< HEAD
         android:layout_marginEnd="52dp"
         android:text="Login"
         android:textAllCaps="false"
 
+=======
+        android:text="@string/login"
+        android:textAllCaps="false"
+>>>>>>> a34d7f9cfa8589f63046b2e7521c82bc6042c588
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

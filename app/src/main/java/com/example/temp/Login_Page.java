@@ -66,6 +66,7 @@ public class Login_Page extends AppCompatActivity  {
                 Log.println(Log.INFO, "after auth instance" , "auth" );
 
 
+//<<<<<<< HEAD
                 auth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -73,8 +74,8 @@ public class Login_Page extends AppCompatActivity  {
                             Log.println(Log.INFO, "SUCCESS" , "SUCCESS IS " );
                             startActivity(new Intent(getApplicationContext(), SinglePlayer.class));
                             finish();
-//                            String userid = auth.getCurrentUser().getUid().toString();
-//                            Log.println(Log.INFO, "SUCCESS" , "SUCCESS IS MY LOCALITY" + userid );
+                            String userid = auth.getCurrentUser().getUid().toString();
+                            Log.println(Log.INFO, "SUCCESS" , "SUCCESS IS MY LOCALITY" + userid );
 //                            DocumentSnapshot snapshot = new DocumentSnapshot();
 //                            fdb.collection("Player_Profile").document(userid).addSnapshotListener(new EventListener<DocumentSnapshot>() {
 //                                @Override
@@ -86,7 +87,15 @@ public class Login_Page extends AppCompatActivity  {
 
                         }
 
+//=======
+//                auth.signInWithEmailAndPassword(username, password).addOnCompleteListener(task -> {
+//                    if (task.isSuccessful()) {
+//                        Log.println(Log.INFO, "SUCCESS" , "SUCCESS IS " );
+//                            startActivity(new Intent(getApplicationContext(), SinglePlayer.class));
+//                            finish();
+//>>>>>>> a34d7f9cfa8589f63046b2e7521c82bc6042c588
                     }
+
                 });
 //                startActivity(new Intent(this, SinglePlayer.class));
 //                this.finish();
@@ -125,4 +134,6 @@ public class Login_Page extends AppCompatActivity  {
 //        }
 //    }
 
+}
+    }
 }
